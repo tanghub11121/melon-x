@@ -8,25 +8,25 @@ local L_2_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-sc
 local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local L_4_ = L_1_:CreateWindow({
-	Title = "melon x",
+	Title = "melon x hub",
 	SubTitle = "v1",
 	TabWidth = 160,
 	Size = UDim2.fromOffset(530, 350),
 	Acrylic = false,
-	Theme = "Green",
+	Theme = "Aqua",
 	MinimizeKey = Enum.KeyCode.End
 })
 local L_5_ = {
         Info = L_4_:AddTab({
-		Title = "เครดิต",
+		Title = "Info",
 		Icon = ""
 	}),
 	Main = L_4_:AddTab({
-		Title = "หน้าหลัก",
+		Title = "Main",
 		Icon = ""
 	}),
 	Stats = L_4_:AddTab({
-		Title = "Start",
+		Title = "Stats",
 		Icon = ""
 	}),
 	Teleport = L_4_:AddTab({
@@ -34,27 +34,27 @@ local L_5_ = {
 		Icon = ""
 	}),
 	Raid = L_4_:AddTab({
-		Title = "ลงดัน",
+		Title = "Raid",
 		Icon = ""
 	}),
 	Race = L_4_:AddTab({
-		Title = "เผ่า V4",
+		Title = "Race V4",
 		Icon = ""
 	}),
         Fruit = L_4_:AddTab({
-		Title = "ผล",
+		Title = "Fruit",
 		Icon = ""
 	}),
 	Shop = L_4_:AddTab({
-		Title = "ร้านค้า",
+		Title = "Shop",
 		Icon = ""
 	}),
 	Player = L_4_:AddTab({
-		Title = "ผู้คน",
+		Title = "Player",
 		Icon = ""
         }),
         Setting = L_4_:AddTab({
-		Title = "การตั้งค่า",
+		Title = "Setting",
 		Icon = ""
 	}),
 	Misc = L_4_:AddTab({
@@ -2641,7 +2641,7 @@ do
 	L_92_.BorderSizePixel = 0
 	L_92_.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 	L_92_.Size = UDim2.new(0, 50, 0, 50)
-	L_92_.Image = "rbxassetid://103193276699177"
+	L_92_.Image = "rbxassetid://102151582025543"
 	L_92_.MouseButton1Click:Connect(function()
 		game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 	end)
@@ -6769,7 +6769,7 @@ L_5_.Misc:AddButton({
 	Title = "Rain Fruit",
 	Description = "Rain fruit (Fake)",
 	Callback = function()
-		for L_639_forvar0, L_640_forvar1 in pairs(game:GetObjects("rbxassetid://103193276699177")[1]:GetChildren()) do
+		for L_639_forvar0, L_640_forvar1 in pairs(game:GetObjects("rbxassetid://102151582025543")[1]:GetChildren()) do
 			L_640_forvar1.Parent = game.Workspace.Map
 			L_640_forvar1:MoveTo(game.Players.LocalPlayer.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
 			if L_640_forvar1.Fruit:FindFirstChild("AnimationController") then
@@ -6998,7 +6998,7 @@ L_5_.Misc:AddButton({
 		for L_695_forvar0, L_696_forvar1 in pairs(L_670_) do
 			if L_667_[L_696_forvar1] and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buy" .. L_696_forvar1, true) == 1 then
 				local L_697_ = Instance.new("ImageLabel", L_668_)
-				L_697_.Image = "rbxassetid://103193276699177"
+				L_697_.Image = "rbxassetid://102151582025543"
 				L_697_.ImageRectSize = Vector2.new(100, 100)
 				L_697_.ImageRectOffset = L_667_[L_696_forvar1] * 100
 			end
@@ -7164,14 +7164,14 @@ end
 --info
 L_5_.Info:AddButton(
         {
-            Title = "Thank for use Rain_Hub",
-            Description = "dev by Rain sp by TThe",
+            Title = "Thank for use _Hub",
+            Description = "dev by melon x sp by TThe",
             Callback = function()
-                setclipboard("dev by Rain sp by TThe")
+                setclipboard("dev by melon x sp by TThe")
                 Fluent:Notify(
                     {
-                        Title = "Rain_Hub",
-                        Content = "dev by Rain sp by TThe",
+                        Title = "melon x_Hub",
+                        Content = "dev by Rain  sp by TThe",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
                     }
@@ -7181,13 +7181,13 @@ L_5_.Info:AddButton(
     )
 L_5_.Info:AddButton(
         {
-            Title = "ลิ้งค์ Discord melon x",
-            Description = "https://discord.gg/y2Z7WNPv",
+            Title = "ลิ้งค์ Discord melon x_Hub",
+            Description = "https://discord.gg/vpG2yZ4v",
             Callback = function()
-                setclipboard("https://discord.gg/y2Z7WNPv")
+                setclipboard("https://discord.gg/vpG2yZ4v")
                 Fluent:Notify(
                     {
-                        Title = "melon x",
+                        Title = "melon x_Hub",
                         Content = "Copied!",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
